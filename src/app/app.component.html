@@ -1,0 +1,34 @@
+<!-- <app-product [product]="product"></app-product> -->
+<div class="main">
+    <app-product *ngFor="let developers of developer" (productClicked)="clickProduct($event)" [developer]="developers" class="card"></app-product>
+</div>
+
+<!-- <input type="text" [(ngModel)]="title">
+{{ title }}
+
+<div *ngIf="title === 'fernando' ">
+    esto es un div fernando
+</div>
+
+<div [ngSwitch]="title">
+    <p *ngSwitchCase="'nicolas'">este es nicolas</p>   
+    <p *ngSwitchCase="'julian'"> este es Julian</p>
+    <p *ngSwitchCase="'camilo'"> este es fernando</p>
+    <p *ngSwitchDefault>No hay elementos</p>
+</div>
+
+<button (click)="addItem()" >add item</button>
+<ul>
+    <li *ngIf="items.length === 0">la lista esta vacia </li>
+    <li *ngFor="let name of items; index as i">
+        <span>{{ i }}</span>{{ name }}
+        <button (click)="deleteItem()">Delete</button>
+    </li>
+</ul>
+
+<div *ngFor="let developers of developer">
+    {{ developers.name }}
+    <img src="{{ developers.image }}" alt="{{ developers.name }}">
+    {{ developers.age }}
+    {{ developers.job }}
+</div> -->

@@ -1,0 +1,19 @@
+
+<div class="card-content">
+    <div class="content">
+        <div class="image" style="background-image: url('{{ developer.image }}');">
+            <img src="{{ developer.image }}" alt="{{ developer.name }}">
+        </div>
+        <div class="card-details">
+            <div class="name">{{ developer.name | uppercase }}</div>
+            <em>{{ developer.job }}</em>
+
+            <p>Edad: {{ developer.age }}</p>   
+        </div>
+    </div>
+    <div class="button-group">
+        <button (click)="addCart()">Select</button>
+    </div>
+</div>
+
+
